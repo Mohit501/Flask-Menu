@@ -1,0 +1,46 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menu Example</title>
+	<style type="text/css">
+	   #logo
+	   {
+	   	padding: 20px;
+	   	color: #FF05FF;
+	   	width: 70px;
+	   	height: 40px;
+	   	font-size: 50px;
+	   }
+	   #opt
+	   {
+	   	font-size: 30px;
+	   	padding: 20px;
+	   	text-align: center;
+
+	   }
+	   a
+	   {
+	   	text-decoration-line: none;
+	   	color: #E100DA ;
+	   }
+
+	</style>
+</head>
+<body>
+<div class="Menu">
+	<table>
+		<tr>
+			<td = id = "logo">501</td>
+			<td id = "opt"><a href="{{url_for('Information')}}"> Information </a></td>
+			<td id = "opt"><a href = "{{url_for('contact')}}">Contact Me </a></td>
+		</tr>
+    </table>
+</div>
+<div class="container">
+	{%block content%}
+	{%endblock%}
+</div>
+
+</body>
+</html>
